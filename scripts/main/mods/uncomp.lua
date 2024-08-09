@@ -62,7 +62,6 @@ AddPrefabPostInit("moonmaw_glass", function(inst)
     
     inst:AddComponent("radiationsource")
     inst.components.radiationsource:SetRadius(4)
-    inst.components.radiationsource:SetContaminationAmount(0.5)
     inst.components.radiationsource:SetRadiationAmount(2)
 end)
 
@@ -73,7 +72,6 @@ AddPrefabPostInit("moonmaw_trap", function(inst)
     
     inst:AddComponent("radiationsource")
     inst.components.radiationsource:SetRadius(4)
-    inst.components.radiationsource:SetContaminationAmount(0.5)
     inst.components.radiationsource:SetRadiationAmount(2)
 end)
 

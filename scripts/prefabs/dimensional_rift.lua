@@ -441,9 +441,9 @@ local function portalfn()
     inst.components.timer:StartTimer("spawnportalloot_tick", TUNING.DIMENSIONAL_RIFTS.STAGES[inst._stage].LOOTSPAWNTIME)
 
 	inst:AddComponent("radiationsource")
-    inst.components.radiationsource:SetRadius(24)
+    inst.components.radiationsource:SetRadius(18)
     inst.components.radiationsource:SetContaminationAmount(0.5)
-    inst.components.radiationsource:SetRadiationAmount(14)
+    inst.components.radiationsource:SetRadiationAmount(8)
     inst.components.radiationsource:ShouldContaminateTiles(true)
 
     inst:WatchWorldState("cycles", on_cycles_changed)

@@ -107,9 +107,9 @@ local function MakeBarrel(name)
 		inst.components.workable:SetOnFinishCallback(onhammered)
 
 		inst:AddComponent("radiationsource")
-        inst.components.radiationsource:SetRadius(12)
+        inst.components.radiationsource:SetRadius(10)
         inst.components.radiationsource:SetContaminationAmount(0.1)
-        inst.components.radiationsource:SetRadiationAmount(4)
+        inst.components.radiationsource:SetRadiationAmount(3)
         inst.components.radiationsource:ShouldContaminateTiles(true)
 
         inst:ListenForEvent("floater_startfloating", function(inst) inst.AnimState:PlayAnimation("idle_water", true) end)
