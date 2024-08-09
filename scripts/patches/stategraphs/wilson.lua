@@ -300,7 +300,7 @@ local oldquickeat = sg.states["quickeat"].onenter
             local build, overridesymbol
             if type(drink_data) == "table" then
                 build, overridesymbol = drink_data.build, drink_data.sym
-				print ("Show non-crockpot drink", drink_data.build, drink_data.sym)
+				-- print ("Show non-crockpot drink", drink_data.build, drink_data.sym)
             else
                 build, overridesymbol = GetFoodBuild(feed.prefab)
             end
@@ -332,7 +332,7 @@ local oldquickeat = sg.states["quickeat"].onenter
             local build, overridesymbol
             if type(drink_data) == "table" then
                 build, overridesymbol = drink_data.build, drink_data.sym
-				print ("Show non-crockpot drink", drink_data.build, drink_data.sym)
+				-- print ("Show non-crockpot drink", drink_data.build, drink_data.sym)
             else
                 build, overridesymbol = GetFoodBuild(feed.prefab)
             end

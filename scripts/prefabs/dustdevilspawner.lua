@@ -4,7 +4,7 @@ local prefabs =
 }
 
 local function OnIsSummer(inst)
-  print("Spawning dustdevils in summer")
+--   print("Spawning dustdevils in summer")
   inst:DoTaskInTime(0, function(inst)
   inst.components.childspawner:StartSpawning()
   end)
@@ -29,7 +29,7 @@ local function fn()
 	inst:WatchWorldState("issummer", OnIsSummer)
 	
 	if not TheWorld.state.issummer then
-		print("It is not summer, do not spawn dust devils")
+		-- print("It is not summer, do not spawn dust devils")
 		inst:DoTaskInTime(0, function(inst)
 		inst.components.childspawner:StopSpawning()
 		end)

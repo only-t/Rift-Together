@@ -98,7 +98,7 @@ local function AddDefenseModifier(inst, type, mult, condition)
 	end
 	inst.components.damagetyperesist:RT_AddMult(type, mult, key, condition)
 	
-	print("[RT] -DAMAGE TYPES TEST- "..inst.prefab..": Incoming "..type.." x"..mult)
+	-- print("[RT] -DAMAGE TYPES TEST- "..inst.prefab..": Incoming "..type.." x"..mult)
 end
 
 local function AddResistance(inst, type, condition)
@@ -125,7 +125,7 @@ local function AddAttackModifier(inst, type, mult, condition)
 	end
 	inst.components.damagetypebonus:RT_AddMult(type, mult, key, condition)
 	
-	print("[RT] -DAMAGE TYPES TEST- "..inst.prefab..": Outgoing "..type.." x"..mult)
+	-- print("[RT] -DAMAGE TYPES TEST- "..inst.prefab..": Outgoing "..type.." x"..mult)
 end
 
 local function AddBonus(inst, type, condition)
